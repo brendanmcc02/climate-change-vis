@@ -1,0 +1,171 @@
+<!-------------------------------------------- CONFIGURING HTML -------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Europe | Analytics</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
+    >
+  </script>
+
+<!-------------------------------------------- IMAGE AND TITLE TEXT -------------------------------------------->
+
+    <div class="image3" id="image3">
+      <div class="gtext">
+        <span class="border trans">
+          Analytics - Europe
+        </span>
+      </div>
+    </div>
+
+<!------------ EUROPE DIV (INCLUDES 'EXPAND' BUTTON, iFRAME, 'CONCLUSIONS' BUTTON, AND CONCLUSIONS FOR EACH OF THE UK, SPAIN AND FRANCE) -------------->
+
+    <section id="EUDiv" class="section section-dark">
+      <button id="ukexpbutton" class="ukexpbutton" onclick="openEUPage('UKDiv', this)"><span>United Kingdom</span></button>
+      <button id="fraexpbutton" class="fraexpbutton" onclick="openEUPage('FraDiv', this)"><span>France</span></button>
+      <button id="spaexpbutton" class="spaexpbutton" onclick="openEUPage('SpaDiv', this)"><span>Spain</span></button>
+      <div id="UKDiv" class="tabcontent">
+        <iframe
+        id="ukiframe"
+        src="https://plot.ly/~brendanmcc02/40/#/.embed?width=100%&autosize=true"
+        width="1280"
+        height="720"
+        style="border:none;">
+      </iframe>
+      </br>
+       <div id="ukconbutton">
+        <button class="ukconbutton" onclick="showUKCon()">
+          <span>
+          Conclusions
+        </span>
+        </button>
+      </div>
+      </div>
+      <div id="UKCon" style="display:none;">
+        <span>
+          <p class="uktext">
+            Unlike Ireland, there is an immediate correlation between Rainfall and Temperature here. You can see that the Temperature and Rainfall 
+            behave in almost the exact same manner from 1995 - 1997, the same also occurs from 2009 - 2011. I think the reason why the UK has 
+            obvious correlation between Rainfall and Temperature, while Ireland does not, is because the UK is about as twice as big in size as 
+            Ireland. Hence, the temperature in the UK is less consistent.
+
+            There is also a slight correlation between rainfall and tourism in 2001. The tourism in the UK really starts to rise in 2001, and 
+            similarly, the rainfall experiences a great rise in the same year. Moreover, in 2005 the rainfall starts to gradually rise until 2008. 
+            This growth almost exactly mirrors the steady rise in tourism from 2005 - 2008.
+          </p>
+          </span>
+        </div>
+      </div>
+
+      <div id="FraDiv" class="tabcontent">
+        <iframe
+        id="fraiframe"
+        src="https://plot.ly/~brendanmcc02/26/#/.embed?width=100%&autosize=true"
+        width="1280"
+        height="720"
+        style="border:none;">
+      </iframe>
+    </br>
+    <div id="fraconbutton">
+      <button class="fraconbutton" onclick="showFraCon()">
+        <span>
+       Conclusions
+      </span>
+      </button>
+   </div>
+  </div>
+  <div id="FraCon" style="display:none;">
+    <span>
+      <p class="fratext">
+        France is the most popular Tourist Destination as of today. Similar to the UK, there is an obvious correlation between rainfall and Temperature. 
+        They both experience very similar movements from 2008 onwards.
+
+        However, there is a noticeable correlation between tourism and rainfall. From 1995 - 2001, both the rainfall and tourism increase steadily at the 
+        same rate. Further more, the tourism starts to steadily decrease from 2007 - 2010. During this time the rainfall also experiences a similar decline. 
+        Although, after this decline the tourism starts to increase again in 2010. At this time, the rainfall also starts to increase. It is also worth noting 
+        that the national temperature is much less consistent that it was in the 1990s. From 2010 onwards, the temperature spikes up and down, as opposed to the 
+        consistent nature of the temperature from 1995 - 2008.
+      </p>
+      </span>
+    </div>
+      </div>
+
+      <div id="SpaDiv" class="tabcontent">
+        <iframe
+        id="spaiframe"
+        src="https://plot.ly/~brendanmcc02/28/#/.embed?width=100%&autosize=true"
+        width="1280"
+        height="720"
+        style="border:none;">
+      </iframe>
+      </br>
+        <div id="spaconbutton">
+          <button class="spaconbutton" onclick="showSpaCon()">
+            <span>
+           Conclusions
+         </span>
+         </button>
+        </div>
+        </div>
+        <div id="SpaCon" style="display:none;">
+          <span>
+          <p class="spatext">
+             In a similar fashion to France, there is a visible correlation between tourism and temperature. As you can see, the tourism in spain starts to increase 
+             steadily from 2007. From 2005 (just 2 years earlier), the temperature becomes much more inconsistent. For example, the temperature from 1995 - 2005 is 
+             almost a straight line, whereas the temperature is much more inconsistent from 2005 onwards (when the tourism in Spain really started to kick off).
+
+             Unlike France however, you can see that in 2010 the tourism almost doubles. From 2010 onwards, the rainfall decreases quite drastically. I found this 
+             interesting as it possibly suggested that the decline in rainfall led to an increase in tourism in Spain.
+         </p>
+        </span>
+       </div>
+      </div>
+    </br>
+    </br>
+  </section>
+
+<!-------------------------------------------- BOTTOM IMAGE -------------------------------------------->
+
+    <div class="image9"></div>
+
+
+<!-------------------------------------------- JAVASCRIPT REFERENCE FOR ICONS -------------------------------------------->
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-------------------------------------------- NAV-BAR -------------------------------------------->
+
+    <header>
+      <nav id="navigation" class="navbar navbar-dark bg-primary navbar-fixed-top">		
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html"><span>Home <i class="fa fa-home"></i></span></a>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Analytics <i class='fas fa-angle-down'></i></a>
+              <div class="dropdown-content">
+                <a href="ireland.html">Ireland <i class='fas fa-flag'></i></a>
+                <a href="#image3">Europe <i class='fas fa-euro-sign'></i></a>
+                <a href="asia.html">Asia <i class="fa fa-yen"></i></a>
+                <a href="america.html">America <i class='fas fa-dollar-sign'></i></a>
+              </div>
+            </li>
+            <li>
+              <a href="about.html"><span itemprop="name">About <i class="fa fa-info-circle"></i></span></a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+  </body>
+</html>

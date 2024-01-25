@@ -1,0 +1,106 @@
+<!-------------------------------------------- CONFIGURING HTML -------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>America | Analytics</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
+    >
+  </script>
+
+<!-------------------------------------------- IMAGE AND TITLE TEXT -------------------------------------------->
+
+    <div class="image5" id="image5">
+      <div class="gtext">
+        <span class="border trans">
+          Analytics - America
+        </span>
+      </div>
+    </div>
+
+<!---------------------------------------- USA DIV (INCLUDES 'EXPAND' BUTTON, iFRAME, 'CONCLUSIONS' BUTTON, AND CONCLUSIONS) -------------------------------->
+
+    <section id="UsaAna" class="section section-dark">
+    </br>
+      <button id="usaexpbutton" class="usaexpbutton" onclick="showUsaDiv()">
+        <span>
+          Expand
+        </span>
+      </button>
+      </br>
+      </br>
+      <div id="UsaDiv" style="display:none;">
+        </br>
+        <iframe
+         id="usaiframe"
+         src="https://plot.ly/~brendanmcc02/44/#/.embed?width=100%&autosize=true"
+         width="1280"
+         height="720"
+         style="border:none;">
+       </iframe>
+       </br>
+      <div id="usaconbutton">
+        <button class="usaconbutton" onclick="showUsaCon()">
+          <span>
+          Conclusions
+        </span>
+        </button>
+      </br>
+      </div>
+      </div>
+      <div id="UsaCon" style="display:none;">
+        <span>
+          <p class="usatext">
+            Admittedly, the correlation between Tourism and Temperature or Rainfall is quite faint here. But if one looks closely, you can see that from 2007, the Temperature and Tourism 
+            both increase quite noticeably at a very similar rate. Even the rainfall has a slight increase during this period (2013 - 2015). Other than this, it was very difficult to spot 
+            a tangible correlation between the three statistics. 
+          </p>
+          </span>
+        </div>
+    </section>
+
+<!-------------------------------------------- BOTTOM IMAGE -------------------------------------------->
+
+    <div class="image11"></div>
+
+
+<!-------------------------------------------- JAVASCRIPT REFERENCE FOR ICONS -------------------------------------------->
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-------------------------------------------- NAV-BAR -------------------------------------------->
+
+    <header>
+      <nav id="navigation" class="navbar navbar-dark bg-primary navbar-fixed-top">		
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html"><span>Home <i class="fa fa-home"></i></span></a>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Analytics <i class='fas fa-angle-down'></i></a>
+              <div class="dropdown-content">
+                <a href="ireland.html">Ireland <i class='fas fa-flag'></i></a>
+                <a href="europe.html">Europe <i class='fas fa-euro-sign'></i></a>
+                <a href="asia.html">Asia <i class="fa fa-yen"></i></a>
+                <a href="#image5">America <i class='fas fa-dollar-sign'></i></a>
+              </div>
+            </li>
+            <li>
+              <a href="about.html"><span itemprop="name">About <i class="fa fa-info-circle"></i></span></a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+  </body>
+</html>

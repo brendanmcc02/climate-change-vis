@@ -1,0 +1,111 @@
+<!-------------------------------------------- CONFIGURING HTML -------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ireland | Analytics</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js">
+  </script>
+
+<!-------------------------------------------- IMAGE AND TITLE TEXT -------------------------------------------->
+
+    <div class="image2" id="image2">
+      <div class="gtext">
+        <span class="border trans">
+          Analytics - Ireland
+        </span>
+      </div>
+    </div>
+
+<!------------------------------------------- IRELAND DIV (INCLUDES 'EXPAND' BUTTON, iFRAME, 'CONCLUSIONS' BUTTON, AND CONCLUSIONS)---------------------------->
+
+    <section id="IreAna" class="section section-dark">
+    </br>
+      <button id="ireexpbutton" class="ireexpbutton" onclick="showIreDiv()">
+        <span>
+          Expand
+        </span>
+      </button>
+      </br>
+      </br>
+      <div id="IreDiv" style="display:none;">
+        </br>
+        <iframe
+        id="ireiframe"
+        src="https://plot.ly/~brendanmcc02/38/#/.embed?width=100%&autosize=true"
+        width="1280"
+        height="720"
+        style="border:none;">
+      </iframe>
+       </br>
+      <div id="ireconbutton">
+        <button class="ireconbutton" onclick="showIreCon()">
+          <span>
+          Conclusions
+        </span>
+        </button>
+      </br>
+      </div>
+      </div>
+      <div id="IreCon" style="display:none;">
+        <span>
+          <p class="iretext">
+            Interestingly, it's very difficult to spot a correlation between rainfall and temperature in Ireland. You will see that
+            in other countries, there is an obvious correlation between rainfall and temperature. I think this is the case because
+            since Ireland is a very small island (in comparison to other countries), the temperature of the island is relatively 
+            consistent. However, the size of a country does not impact the amount of rainfall. Hence, it is difficult to spot a 
+            correlation between rainfall and temperature.
+
+            Moreover, you can see the temperature and tourism drop in a very similar way from 2007 - 2010. Obviously, this was during 
+            the Irish recession in 2008, but I found it interesting that the temperature would also drop in an economic crisis. My guess 
+            is that there was less fossil-fuel production in Ireland after the recession, hence the drop in temperature.
+          </p>
+          </span>
+        </div>
+      </section>
+
+<!-------------------------------------------- BOTTOM IMAGE -------------------------------------------->
+
+    <div class="image8"></div>
+
+
+<!-------------------------------------------- JAVASCRIPT REFERENCE FOR ICONS -------------------------------------------->
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-------------------------------------------- NAV-BAR -------------------------------------------->
+
+    <header>
+      <nav id="navigation" class="navbar navbar-dark bg-primary navbar-fixed-top">		
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html"><span>Home <i class="fa fa-home"></i></span></a>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Analytics <i class='fas fa-angle-down'></i></a>
+              <div class="dropdown-content">
+                <a href="#image2">Ireland <i class='fas fa-flag'></i></a>
+                <a href="europe.html">Europe <i class='fas fa-euro-sign'></i></a>
+                <a href="asia.html">Asia <i class="fa fa-yen"></i></a>
+                <a href="america.html">America <i class='fas fa-dollar-sign'></i></a>
+              </div>
+            </li>
+            <li>
+              <a href="about.html"><span itemprop="name">About <i class="fa fa-info-circle"></i></span></a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+  </body>
+</html>

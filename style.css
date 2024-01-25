@@ -1,0 +1,619 @@
+body, html{
+	height:100%;
+	margin:0;
+	font-family:"Lato", sans-serif;
+	font-weight:400;
+	line-height:1.8em;
+	color:#666;
+	scroll-behavior: smooth;
+}
+
+/* ---------------------------------------------------------IMAGES-------------------------------------------------------------------- */
+
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12{
+	position:relative;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	opacity:1;
+}
+
+.image1{
+	background-image:url('../images/home.jpg');
+	min-height:87%;
+}
+
+.image2{
+	background-image:url('../images/ireland.jpg');
+	min-height:100%;
+}
+
+.image3{
+	background-image:url('../images/europe.jpg');
+	min-height:100%;
+}
+
+.image4{
+	background-image:url('../images/asia.jpg');
+	min-height:100%;
+}
+
+.image5{
+	background-image:url('../images/america.jpg');
+	min-height:100%;
+}
+
+.image6{
+	background-image:url('../images/bottom.jpg');
+	min-height:450px;
+}
+
+.image7{
+	background-image:url('../images/about.jpg');
+	min-height:87%;
+}
+
+.image8{
+	background-image:url('../images/ireland2.jpg');
+	min-height:100%;
+}
+
+.image9{
+	background-image:url('../images/europe2.jpg');
+	min-height:100%;
+}
+
+.image10{
+	background-image:url('../images/asia2.jpg');
+	min-height:100%;
+}
+
+.image11{
+	background-image:url('../images/america2.jpg');
+	min-height: 100%;
+}
+
+.image12{
+	background-image:url('../images/about2.jpg');
+	min-height:50%;
+}
+
+/* ---------------------------------------------------------DIV'S AND SECTIONS--------------------------------------------------------- */
+
+.section{
+	text-align:center;
+	padding:50px 80px;
+}
+
+.section-light{
+	background-color:#f4f4f4;
+	color:#666;
+}
+
+.section-light:hover{
+	transition: 0.6s ease-out;
+	background-color:#282e34;
+	color:#ddd;
+}
+
+.section-dark{
+	background-color:#262626;
+	color:#ddd;
+}
+
+.section-dark:hover{
+	transition: 0.6s ease-out;
+	background-color:#282e34;
+	color:#ddd;
+}
+
+.section-about{
+	background-color: #e6e6e6;
+	color: #1a1a1a;
+}
+
+.section-about:hover{
+	transition: 0.6s ease-out;
+	background-color:#f4f4f4;
+	color:#666;
+}
+
+/* ---------------------------------------------------------TEXT AND BORDERS--------------------------------------------------------- */
+
+.gtext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  font-size:27px;
+  letter-spacing:10px;
+  text-transform:uppercase;
+}
+
+.gtext .border{
+  background-color:#fff;
+  color:#111;
+  padding:20px;
+  border-radius: 4px;
+  mix-blend-mode:normal;
+}
+
+.gtext .border:hover {
+	transition: 0.6s ease-out;
+	background-color:#090909;
+	color:#fff;
+	mix-blend-mode:multiply;
+}
+
+.gtext .border.trans{
+  background-color:#090909;
+  color: white;
+  padding:20px;
+  font-size:25px;
+  mix-blend-mode:multiply;
+}
+
+.gtext .border.trans:hover {
+	transition: 0.6s ease-out;
+	background-color:#090909;
+	color:white;
+	mix-blend-mode:normal;
+	letter-spacing: 11px;
+}
+
+.gtext .border.about{
+	background-color:#fff;
+	color:#111;
+	padding:20px;
+	border-radius: 4px;
+	mix-blend-mode:normal;
+	letter-spacing: 15px;
+  }
+  
+.gtext .border.about:hover {
+	  transition: 0.6s ease-out;
+	  background-color:#090909;
+	  color:#fff;
+	  mix-blend-mode:multiply;
+  }
+
+.hometext{
+	text-align:center;
+	letter-spacing:1px;
+	padding:20px 300px;
+}
+
+.iretext, .usatext, .uktext, .fratext, .spatext, .chitext, .japtext {
+	text-align:center;
+	color:#000;
+	font-size:16px;
+	letter-spacing:1px;
+	background-color:#eee;
+	padding:20px;
+	border-style: solid;
+	border-radius: 20px;
+	border-width: 2px;
+}
+
+.iretext{
+	border-color: #006600;
+}
+
+.usatext{
+	border-color: #0052cc;
+}
+
+.uktext{
+	border-color: #002db3;
+}
+
+.fratext{
+	border-color: #0033cc;
+}
+
+.spatext{
+	border-color: #e60000;
+}
+
+.chitext{
+	border-color: #ff1a1a;
+}
+  
+.japtext{
+	border-color: #ff3333;
+}
+
+.bulletpoint{
+	padding: 0 500px;
+	float: center;
+}
+
+/* ---------------------------------------------------------NAV BAR-------------------------------------------------------------------- */
+
+.navbar-fixed-top.scrolled {
+	background-color:  rgba(0, 0, 0, 0.25)!important;
+	transition: background-color 200ms linear;
+  }
+  
+.navbar-fixed-top.scrolled .nav-link {
+	color:#555;
+}
+
+nav{
+	width:100%;
+	height:40px;
+	position: fixed;
+	top: 0;
+	text-transform:uppercase;
+	font-weight:600;
+	letter-spacing:2px;
+	background: rgba(0, 0, 0, 0);
+}
+
+nav ul{
+	display:flex;
+	padding:0 100px;
+	float:right;
+	margin:0;
+}
+
+nav ul li{
+	list-style:none;
+	position: relative;
+}
+
+nav ul li a{
+	display:block;
+	color: white;
+	padding: 0 50px;
+	line-height: 40px;
+	-webkit-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+	transition: 0.6s ease-out;
+	color: black;
+	background-color: white;
+}
+
+li a, .dropbtn {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.25);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.dropdown-content a:hover {
+	background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 1px;
+	background-color: black;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 0.3s;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+/* ---------------------------------------------------------BUTTONS--------------------------------------------------------- */
+
+.button, .ireconbutton, .usaconbutton, .fraconbutton, .ukconbutton, .spaconbutton, .japconbutton, .chiconbutton, .sendbutton {
+  font-family:"Lato", sans-serif;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform:uppercase;
+  font-weight:600;
+  letter-spacing:2px;
+  transition-duration: 0.1s;
+  border-radius: 20px;
+}
+
+.button:hover {
+	transition: 0.5s ease-out;
+	background-color: black;
+	color: white;
+	letter-spacing: 5px;
+}
+
+.button span, .ireexpbutton span, .ireconbutton span, .usaexpbutton span, .usaconbutton span, .fraexpbutton span, .fraconbutton span, .spaexpbutton span, .spaconbutton span, .ukexpbutton span, .ukconbutton span, .japexpbutton span, .japconbutton span, .chiexpbutton span, .chiconbutton span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+.button span:after, .ireexpbutton span:after, .ireconbutton span:after, .usaexpbutton span:after, .usaconbutton span:after, .fraexpbutton span:after, .fraconbutton span:after, .spaexpbutton span:after, .spaconbutton span:after,  .ukexpbutton span:after, .ukconbutton span:after, .japexpbutton span:after, .japconbutton span:after,  .chiexpbutton span:after, .chiconbutton span:after {
+	content: '\203a';
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+.button:hover span, .ireexpbutton:hover span, .ireconbutton:hover span, .usaexpbutton:hover span, .usaconbutton:hover span, .ireexpbutton:hover span, .fraexpbutton:hover span, .fraconbutton:hover span, .spaexpbutton:hover span, .spaconbutton:hover span, .ukexpbutton:hover span, .ukconbutton:hover span, .japexpbutton:hover span, .japconbutton:hover span, .chiexpbutton:hover span, .chiconbutton:hover span {
+	padding-right: 25px;
+  }
+  
+.button:hover span:after, .ireexpbutton:hover span:after, .ireconbutton:hover span:after, .usaexpbutton:hover span:after, .usaconbutton:hover span:after, .fraexpbutton:hover span:after, .fraconbutton:hover span:after, .spaexpbutton:hover span:after, .spaconbutton:hover span:after, .ukexpbutton:hover span:after, .ukconbutton:hover span:after,  .japexpbutton:hover span:after, .japconbutton:hover span:after,  .chiexpbutton:hover span:after, .chiconbutton:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+  
+.ireconbutton:active, .usaconbutton:active, .fraconbutton:active, .fraconbutton:active, .spaconbutton:active, .ukconbutton:active, .japconbutton:active, .chiconbutton:active{
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }
+  
+.tablink, .ukexpbutton, .fraexpbutton, .spaexpbutton, .chiexpbutton, .japexpbutton, .ireexpbutton, .usaexpbutton {
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  font-size: 15px;
+	  width: 25%;
+	  letter-spacing:4px;
+	  text-transform:uppercase;
+	  font-weight: 600;
+	  border-radius: 10px;
+  }
+  
+.tablink:hover, .chiexpbutton:hover, .japexpbutton:hover, .ukexpbutton:hover, .fraexpbutton:hover, .spaexpbutton:hover, .ireexpbutton:hover, .usaexpbutton:hover {
+	  letter-spacing:6px;
+  }
+
+.tabcontent {
+	display: none;
+	padding: 100px 20px;
+	height: 100%;
+}
+
+/* ---------------------------------------------------------IRELAND EXPAND AND CONCLUSION BUTTONS----------------------------------------------------------------------- */
+
+.ireexpbutton {
+	border-color: #ffa31a;
+	background-color: #29a329;
+	color: white;
+}
+
+.ireexpbutton:hover {
+	background-color: #1f7a1f;
+	color: #ffa31a;
+}
+
+.ireexpbutton span:after{
+	color: #ffa31a;
+}
+
+.ireconbutton {
+	background-color: #29a329;
+	color: white;
+	border: 1.5px solid #ffa31a;
+}
+
+.ireconbutton:hover {
+	background-color: #1f7a1f;
+	border: 1.5px solid #ff9900;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	letter-spacing:3px;
+  }
+
+/* ---------------------------------------------------------------USA EXPAND AND CONCLUSION BUTTONS----------------------------------------------------------------------- */
+
+.usaexpbutton {
+	background-color: #002db3;
+	color: white;
+}
+
+.usaexpbutton:hover {
+	background-color: #002699;
+	color: #e60000;
+}
+
+.usaexpbutton span:after{
+	color: #e60000;
+}
+
+.usaconbutton {
+	background-color: #002db3;
+	color: white;
+	border: 1.5px solid #e60000;
+}
+
+.usaconbutton:hover {
+	background-color: #002080;
+	border: 1.5px solid #b30000;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	letter-spacing:3px;
+  }
+
+/* -----------------------------------------------------------------FRANCE EXPAND AND CONCLUSION BUTTONS----------------------------------------------------------------------- */
+
+.fraexpbutton {
+	background-color: #0039e6;
+	color: #ff1a1a;
+}
+
+.fraexpbutton:hover {
+	background-color: #0033cc;
+	color:#ff0000;
+}
+
+.fraexpbutton span:after{
+	color: #ff0000;
+}
+
+.fraconbutton {
+	background-color: #0033cc;
+	color:#ff0000;
+	border: 1.5px solid white;
+}
+
+.fraconbutton:hover {
+	background-color: #0033cc;
+	color:#ff0000;
+	border: 1.5px solid #ffffff;
+}
+
+/* -------------------------------------------------------------SPAIN EXPAND AND CONCLUSION BUTTONS----------------------------------------------------------------------- */
+
+.spaexpbutton {
+	background-color: #ff0000;
+	color: #f1e027;
+}
+
+.spaexpbutton:hover {
+	background-color: #e60000;
+	color:#f0df0f;
+}
+
+.spaexpbutton span:after{
+	color: #f0df0f;
+}
+
+.spaconbutton {
+	background-color: #e60000;
+	color:#f0df0f;
+	border: 1.5px solid #f0df0f;
+}
+
+.spaconbutton:hover {
+	background-color: #e60000;
+	color:#f0df0f;
+	border: 1.5px solid #f0df0f;
+}
+
+/* ---------------------------------------------------------------UK EXPAND AND CONCLUSION BUTTONS----------------------------------------------------------------------- */
+
+.ukexpbutton {
+	background-color: #0033cc;
+	color: #ffffff;
+}
+
+.ukexpbutton:hover {
+	background-color: #002db3; 
+	color: #ffffff;
+}
+
+.ukexpbutton span:after{
+	color: #ffffff;
+}
+
+.ukconbutton {
+	background-color: #002db3; 
+	color: #ffffff;
+	border: 1.5px solid #ff3333;
+}
+
+.ukconbutton:hover {
+	background-color: #002db3; 
+	color: #ffffff;
+	border: 1.5px solid #ff0000;
+}
+
+/* --------------------------------------------------------------CHINA EXPAND AND CONCLUSION BUTTONS----------------------------------------------------------------------- */
+
+.chiexpbutton  {
+	background-color: #ff1a1a;
+	color:#ffff33;
+}
+
+.chiexpbutton:hover  {
+	background-color: #ff0000;
+	color:#ffff1a;
+}
+
+.chiexpbutton span:after{
+	color: #ffff00;
+}
+
+.chiconbutton {
+	background-color: #ff1a1a;
+	color: #ffff33;
+	border: 1.5px solid #ffff33;
+}
+
+.chiconbutton:hover {
+	background-color: #ff0000;
+	color:#ffff1a;
+	border-color: #ffff1a;
+}
+
+/* -------------------------------------------------------------JAPAN EXPAND AND CONCLUSION BUTTONS----------------------------------------------------------------------- */
+
+.japexpbutton{
+	background-color: white;
+	color:#ff3333;
+}
+
+.japexpbutton:hover {
+	background-color: white;
+	color:#e60000;
+}
+
+.japexpbutton span:after{
+	color: #e60000;
+}
+
+.japconbutton {
+	background-color: white;
+	color: #ff3333;
+	border: 1.5px solid #ff3333;
+}
+
+.japconbutton:hover {
+	background-color: white;
+	color:#e60000;
+	border-color: #e60000;
+}
+
+/* ----------------------------------------------------------------------------SEND BUTTON----------------------------------------------------------------------- */
+
+.sendbutton{
+	background-color: #262626;
+	color: #e6e6e6;
+	letter-spacing: 5px;
+}
+
+.sendbutton:hover{
+	transition: 0.5s ease-out;
+	background-color: black;
+	color: white;
+}

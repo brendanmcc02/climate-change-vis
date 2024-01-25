@@ -1,0 +1,131 @@
+<!-------------------------------------------- CONFIGURING HTML -------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Asia | Analytics</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"
+    >
+  </script>
+
+<!-------------------------------------------- IMAGE AND TITLE TEXT -------------------------------------------->
+
+    <div class="image4" id="image4">
+      <div class="gtext">
+        <span class="border trans">
+          Analytics - Asia
+        </span>
+      </div>
+    </div>
+
+<!------------ ASIA DIV (INCLUDES 'EXPAND' BUTTON, iFRAME, 'CONCLUSIONS' BUTTON, AND CONCLUSIONS FOR EACH OF CHINA AND JAPAN) -------------->
+
+    <section id="AsiaDiv" class="section section-dark">
+      <button class="chiexpbutton" onclick="openAsiaPage('ChiDiv', this)"><span>China</span></button>
+      <button class="japexpbutton" onclick="openAsiaPage('JapDiv', this)"><span>Japan</span></button>
+      <div id="ChiDiv" class="tabcontent">
+        <iframe
+        id="chiiframe"
+        src="https://plot.ly/~brendanmcc02/34/#/.embed?width=100%&autosize=true&height=720"
+        width="1280"
+        height="720"
+        style="border:none;">
+      </iframe>
+      </br>
+       <div id="chiconbutton">
+        <button class="chiconbutton" onclick="showChiCon()">
+          <span>
+          Conclusions
+        </span>
+        </button>
+      </div>
+      </div>
+      <div id="ChiCon" style="display:none;">
+        <span>
+          <p class="chitext">
+            All three of Tourism, Rainfall and Temperature all experience very similar movements from 2007 - 2010. During that period, all three statistics drop.
+            However, as the tourism starts to rise from 2009, so does the rainfall at that time. There is also a slight correlatiion between rainfall and tourism 
+            from 2012 onwards. We can see that both statistics are very gradually increasing during this period.
+          </p>
+          </span>
+        </div>
+      </div>
+
+      <div id="JapDiv" class="tabcontent">
+        <iframe
+        id="japiframe"
+        src="https://plot.ly/~brendanmcc02/36/#/.embed?width=100%&autosize=true"
+        width="1280"
+        height="720"
+        style="border:none;">
+      </iframe>
+    </br>
+    <div id="japconbutton">
+      <button class="japconbutton" onclick="showJapCon()">
+        <span>
+       Conclusions
+      </span>
+      </button>
+   </div>
+  </div>
+  <div id="JapCon" style="display:none;">
+    <span>
+      <p class="japtext">
+        Out of all the graphs, Japan has to be one of the most interesting as it has a extremely noticeable boom in tourism from 2011 onwards. But what I found 
+        most interesting was that, from my analysis of the other countries, when a countries' tourism starts to rise, this would normally incur an increase in 
+        Temperature or it would make the Temperature more inconstent. The opposite is seen in Japan. As the Tourism starts to sky-rocket, the rainfall becomes 
+        very consitent during this period, almost making a straight line. I think this is because Japan has, in recent years, placed a great emphasis on renewable 
+        energy as opposed to its Asian counterpart, China.
+      </p>
+      </span>
+    </div>
+      </div>
+    </br>
+    </br>
+    </section>
+
+<!-------------------------------------------- BOTTOM IMAGE -------------------------------------------->
+
+    <div class="image10"></div>
+
+
+<!-------------------------------------------- JAVASCRIPT REFERENCE FOR ICONS -------------------------------------------->
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-------------------------------------------- NAV-BAR -------------------------------------------->
+
+    <header>
+      <nav id="navigation" class="navbar navbar-dark bg-primary navbar-fixed-top">		
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html"><span>Home <i class="fa fa-home"></i></span></a>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Analytics <i class='fas fa-angle-down'></i></a>
+              <div class="dropdown-content">
+                <a href="ireland.html">Ireland <i class='fas fa-flag'></i></a>
+                <a href="europe.html">Europe <i class='fas fa-euro-sign'></i></a>
+                <a href="#image4">Asia <i class="fa fa-yen"></i></a>
+                <a href="america.html">America <i class='fas fa-dollar-sign'></i></a>
+              </div>
+            </li>
+            <li>
+              <a href="about.html"><span itemprop="name">About <i class="fa fa-info-circle"></i></span></a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+  </body>
+</html>
